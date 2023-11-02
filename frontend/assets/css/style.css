@@ -80,6 +80,23 @@ iframe {
   background-color: #c5f801;
   color: #0c1318;
 }
+#bookbut {
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #c5f801;
+  border-radius: 5px;
+  box-shadow: 10px;
+  color: #0c1318;
+  font-size: large;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+#bookbut:hover {
+  background-color: #a0c703;
+  color: #0c1318;
+}
+
 #reserve {
   color: #c9ff04;
 }

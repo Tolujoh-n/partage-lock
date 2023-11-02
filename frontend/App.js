@@ -7,7 +7,7 @@ import Contact from "./components/contact";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Services from "./components/Services";
-
+import Connectedhead from "./components/Connectedhead";
 import GLightbox from "glightbox";
 import Swiper from "swiper";
 import Isotope from "isotope-layout";
@@ -85,7 +85,7 @@ const App = ({ isSignedIn, lockCalendar, wallet }) => {
   // If user signed-in show booking calendar
   return (
     <main>
-      <Header onClick={() => wallet.signOut()} />
+      <Connectedhead onClick={() => wallet.signOut()} />
       <Calendar onSubmit={addBooking} currentAccountId={wallet.accountId} />
       { !!bookings.length && <Bookings bookings={bookings}/> }
       <Footer />
