@@ -1,5 +1,6 @@
 import "regenerator-runtime/runtime";
 import React, { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 
 import About from "./components/About"
 import Calendar from "./components/Calendar";
@@ -24,6 +25,8 @@ import "./assets/vendor/swiper/swiper-bundle.min.css";
 
 
 const App = ({ isSignedIn, lockCalendar, wallet }) => {
+  
+
   AOS.init({
     duration: 1000,
     easing: "ease-in-out",
@@ -66,6 +69,7 @@ const App = ({ isSignedIn, lockCalendar, wallet }) => {
     totalPrice.focus();
     description.focus();
     pin.focus();
+
   };
 
   // If user not signed-in show landingpage

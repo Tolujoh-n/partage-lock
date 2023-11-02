@@ -41,11 +41,6 @@ export default function Calendar({ onSubmit, currentAccountId }) {
 
   const pin = Math.floor(Math.random() * (9999 - 1000 + 1) + 1000)
 
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent the default form submission behavior
-    onSubmit(); // Call the onSubmit function
-  };
-
   return (
     <section id="about-boxes" className="about-boxes">
       <br></br>
@@ -53,7 +48,7 @@ export default function Calendar({ onSubmit, currentAccountId }) {
         <br></br>
         <div className="calendar-container">
           <h1 id="calender-title">Booking Form</h1>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={onSubmit}>
             <div className="date-inputs">
               <label htmlFor="name">Name:</label>
               <input
